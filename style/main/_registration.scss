@@ -1,0 +1,16 @@
+@import './form';
+
+.registration-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
+  background: white;
+}
+
+@media screen and (max-width:500px){
+  .registration-form{
+    align-items: baseline;
+    padding: 8vh 0vw;
+  }
+}

@@ -1,0 +1,24 @@
+@import "./form";
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
+  background: white;
+  a{
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+  }
+  button{
+    
+  }
+}
+
+@media screen and (max-width:500px){
+  .login-form{
+    align-items: baseline;
+    padding-top: 8vh;
+  }
+}

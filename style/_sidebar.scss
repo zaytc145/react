@@ -1,0 +1,66 @@
+.sidebar {
+  height: 100%;
+  width: 8.5rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(219, 88, 88);
+  transition: 0.4s;
+  overflow-x: hidden;
+  padding-top: 6rem;
+  white-space: nowrap;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #ecebeb;
+  display: block;
+}
+
+.sidebar a:hover:not(.selected) {
+  transition: 0.2s;
+  background-color:rgba(0,0,0,0.2);
+}
+
+.sidebar span {
+font-family: 'Popins', sans-serif;
+}
+
+main .sidebar {
+  position: absolute;
+  top: 0;
+  right: 2.5rem;
+  font-size: 3.6rem;
+  margin-left: 5rem;
+}
+
+.material-icons,
+.icon-text {
+  vertical-align: middle;
+}
+
+.material-icons {
+  padding-bottom: 0.3rem;
+  margin-right: 1.5rem;
+}
+
+#main {
+  transition: all 0.4s;
+  margin-left: 5.5rem;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 1.5rem;
+  }
+  .sidebar a {
+    font-size: 1.8rem;
+  }
+}
+
+.selected{
+  background-color:rgba(0,0,0,0.5);
+}
